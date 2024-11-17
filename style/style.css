@@ -93,6 +93,6 @@ display: grid;
 @media screen and (max-width:992px) {
   .container .quotes {
    
-    max-width: 70%;
+    max-width: 100%;
   }
 }
