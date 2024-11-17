@@ -90,3 +90,9 @@ display: grid;
 .container .quotes .qoute-author {
   margin-bottom: 0;
 }
+@media screen and (max-width:992px) {
+  .container .quotes {
+   
+    max-width: 70%;
+  }
+}
