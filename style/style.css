@@ -5,18 +5,17 @@
 body {
   font-family: "Cardo", serif;
 }
-.outer-container{
+.outer-container {
   background-image: url("../bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   overflow: auto;
   height: 100vh;
-display: grid; 
-
+  display: grid;
 }
 .container {
-  padding: 20px 0px;
+  padding: 20px 12px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -64,14 +63,13 @@ display: grid;
 .container .quotes {
   background-color: rgba(230, 228, 226, 0.7);
   padding: 10px 30px;
-  max-width: 40%;
   border-radius: 20px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
- 
+
   display: none;
 }
 .container .quotes p {
@@ -90,9 +88,25 @@ display: grid;
 .container .quotes .qoute-author {
   margin-bottom: 0;
 }
-@media screen and (max-width:992px) {
+
+@media screen and (max-width: 576px) {
   .container .quotes {
-   
     max-width: 100%;
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 577px) {
+  .container .quotes {
+    max-width: 80%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container .quotes {
+    max-width: 60%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container .quotes {
+    max-width: 50%;
   }
 }
